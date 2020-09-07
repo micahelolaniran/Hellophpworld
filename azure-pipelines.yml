@@ -14,7 +14,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  phpVersion: 7.2
+  phpVersion: 7.3
     # the name of the service connection that you created above
   serviceConnectionToAzure: webappSC
   # the name of your web app here is the same one you used above
