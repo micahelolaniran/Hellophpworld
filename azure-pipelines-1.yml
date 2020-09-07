@@ -13,6 +13,8 @@ variables:
   # Web app name
   webAppName: 'my-app-nameee'
 
+  serviceConnectionToAzure: webappSC
+
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
