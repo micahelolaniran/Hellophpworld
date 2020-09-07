@@ -5,13 +5,7 @@
 
 # at the top of your YAML file 
 # set some variables that you'll need when you deploy
-variables:
-  # the name of the service connection that you created above
-  serviceConnectionToAzure: webappSC
-  # the name of your web app here is the same one you used above
-  # when you created the web app using the Azure CLI
-  appName: my-app-name
-  
+
 # ...
 trigger:
 - master
@@ -21,6 +15,11 @@ pool:
 
 variables:
   phpVersion: 7.2
+    # the name of the service connection that you created above
+  serviceConnectionToAzure: webappSC
+  # the name of your web app here is the same one you used above
+  # when you created the web app using the Azure CLI
+  appName: my-app-name
 
 steps:
 # add these as the last steps (below all the other `task` items under `steps`)
